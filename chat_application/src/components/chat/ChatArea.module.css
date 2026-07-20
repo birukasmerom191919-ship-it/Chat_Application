@@ -1,0 +1,12 @@
+.chatArea {
+  background: #1b1d27;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  font-size: 32px;
+  font-weight: 600;
+}

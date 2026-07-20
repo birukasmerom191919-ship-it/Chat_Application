@@ -1,0 +1,16 @@
+.sidebar {
+  background: #252836;
+  border-right: 1px solid #34384a;
+
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+}
+
+.sidebar h2 {
+  font-size: 28px;
+  font-weight: 700;
+}

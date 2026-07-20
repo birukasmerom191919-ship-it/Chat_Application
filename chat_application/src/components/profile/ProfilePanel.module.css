@@ -1,0 +1,13 @@
+.profilePanel {
+  background: #252836;
+
+  border-left: 1px solid #34384a;
+
+  padding: 30px;
+
+  color: white;
+}
+
+.profilePanel h2 {
+  font-size: 28px;
+}
