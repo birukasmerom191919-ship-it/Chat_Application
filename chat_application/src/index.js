@@ -1,28 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
 
-html,
-body,
-#root {
-  height: 100%;
-  width: 100%;
-}
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-body {
-  font-family: Inter, sans-serif;
-  background: #1b1d27;
-  color: white;
-}
-
-button,
-input {
-  font: inherit;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+);

@@ -2,7 +2,7 @@
   background: #252836;
   border-right: 1px solid #34384a;
 
-  padding: 30px;
+  padding: 24px;
 
   display: flex;
   flex-direction: column;
@@ -10,7 +10,33 @@
   color: white;
 }
 
-.sidebar h2 {
-  font-size: 28px;
-  font-weight: 700;
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+
+  background: #ff5c5c;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logoSection h2 {
+  font-size: 20px;
+}
+
+.logoSection p {
+  color: #9ca3af;
+  margin-top: 4px;
 }
