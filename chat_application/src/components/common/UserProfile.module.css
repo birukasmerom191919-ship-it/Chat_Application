@@ -1,0 +1,42 @@
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+
+  border-radius: 50%;
+
+  background: #ff5c5c;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+.info h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.info p {
+  color: #9ca3af;
+  margin-top: 4px;
+  font-size: 14px;
+}

@@ -1,0 +1,9 @@
+.list {
+  margin-top: 25px;
+  overflow-y: auto;
+}
+
+.title {
+  margin-bottom: 15px;
+  color: white;
+}

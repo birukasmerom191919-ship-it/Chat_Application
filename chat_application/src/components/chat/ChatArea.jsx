@@ -3,7 +3,7 @@ import styles from "./ChatArea.module.css";
 function ChatArea() {
   return (
     <section className={styles.chatArea}>
-      <h2>Chat Area</h2>
+      <h2>Select a conversation</h2>
     </section>
   );
 }
