@@ -1,9 +1,14 @@
-.list {
-  margin-top: 25px;
-  overflow-y: auto;
+.chatList {
+  margin-top: 24px;
 }
 
-.title {
-  margin-bottom: 15px;
+.chatList h3 {
+  margin-bottom: 18px;
   color: white;
+}
+
+.empty {
+  margin-top: 20px;
+  color: #9ca3af;
+  text-align: center;
 }

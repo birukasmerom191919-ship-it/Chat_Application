@@ -25,8 +25,12 @@ function ChatArea({ selectedChatId, messages, setMessages }) {
 
     const newMessage = {
       id: Date.now(),
-      sender: "me",
-      text,
+      sender: "Brook",
+      text: text,
+      time: new Date().toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+      }),
     };
 
     setMessages((prev) => ({
@@ -74,9 +78,15 @@ function ChatArea({ selectedChatId, messages, setMessages }) {
         {chatMessages.map((message) => (
           <div
             key={message.id}
-            className={message.sender === "me" ? styles.sent : styles.received}
+            className={
+              message.sender === "Brook" || message.sender === "me"
+                ? styles.sent
+                : styles.received
+            }
           >
-            {message.text}
+            <p>{message.text}</p>
+
+            <span className={styles.time}>{message.time}</span>
           </div>
         ))}
 

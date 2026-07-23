@@ -1,6 +1,6 @@
 import styles from "./ChatCard.module.css";
 
-function ChatCard({ id, name, message, time, active, onSelect }) {
+function ChatCard({ id, name, message, time, unread, active, onSelect }) {
   return (
     <div
       className={`${styles.card} ${active ? styles.active : ""}`}
@@ -11,7 +11,12 @@ function ChatCard({ id, name, message, time, active, onSelect }) {
       <div className={styles.content}>
         <div className={styles.header}>
           <h4>{name}</h4>
-          <span>{time}</span>
+
+          <div className={styles.right}>
+            <span className={styles.time}>{time}</span>
+
+            {unread > 0 && <div className={styles.badge}>{unread}</div>}
+          </div>
         </div>
 
         <p>{message}</p>
