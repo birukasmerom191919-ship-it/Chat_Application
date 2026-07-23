@@ -1,0 +1,63 @@
+.profile {
+  background: #262938;
+  border-left: 1px solid #34384b;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 40px 24px;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+
+  border-radius: 50%;
+
+  background: #ff5c5c;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 42px;
+  font-weight: bold;
+
+  margin-bottom: 20px;
+}
+
+.profile h2 {
+  margin-bottom: 8px;
+}
+
+.status {
+  color: #9ca3af;
+  margin-bottom: 40px;
+}
+
+.info {
+  width: 100%;
+}
+
+.item {
+  background: #313548;
+  border-radius: 14px;
+
+  padding: 16px;
+  margin-bottom: 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item span {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.item strong {
+  color: white;
+  font-size: 15px;
+}

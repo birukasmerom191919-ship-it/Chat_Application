@@ -1,5 +1,5 @@
-import ChatCard from "./ChatCard";
 import chats from "../../data/chats";
+import ChatCard from "./ChatCard";
 import styles from "./ChatList.module.css";
 
 function ChatList({ search, selectedChatId, setSelectedChatId }) {
@@ -9,7 +9,7 @@ function ChatList({ search, selectedChatId, setSelectedChatId }) {
 
   return (
     <div className={styles.list}>
-      <h3 className={styles.title}>Chats</h3>
+      <h3>Chats</h3>
 
       {filteredChats.map((chat) => (
         <ChatCard
