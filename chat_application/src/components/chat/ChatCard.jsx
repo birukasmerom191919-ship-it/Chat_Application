@@ -12,15 +12,13 @@ function ChatCard({ id, name, message, time, unread, active, onSelect }) {
         <div className={styles.header}>
           <h4>{name}</h4>
 
-          <div className={styles.right}>
-            <span className={styles.time}>{time}</span>
-
-            {unread > 0 && <div className={styles.badge}>{unread}</div>}
-          </div>
+          <span className={styles.time}>{time}</span>
         </div>
 
         <p>{message}</p>
       </div>
+
+      {unread > 0 && <div className={styles.badge}>{unread}</div>}
     </div>
   );
 }

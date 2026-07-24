@@ -10,21 +10,14 @@ import Profile from "./components/profile/Profile";
 import "./App.css";
 
 function App() {
-  // Selected chat
   const [selectedChatId, setSelectedChatId] = useState(chats[0].id);
 
-  // Load saved messages from Local Storage
   const [messages, setMessages] = useState(() => {
     const savedMessages = localStorage.getItem("messages");
 
-    if (savedMessages) {
-      return JSON.parse(savedMessages);
-    }
-
-    return messagesData;
+    return savedMessages ? JSON.parse(savedMessages) : messagesData;
   });
 
-  // Save messages whenever they change
   useEffect(() => {
     localStorage.setItem("messages", JSON.stringify(messages));
   }, [messages]);
@@ -34,8 +27,8 @@ function App() {
       <Sidebar
         selectedChatId={selectedChatId}
         setSelectedChatId={setSelectedChatId}
+        messages={messages}
       />
-
       <ChatArea
         selectedChatId={selectedChatId}
         messages={messages}
