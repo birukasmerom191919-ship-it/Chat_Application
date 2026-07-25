@@ -4,22 +4,50 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #1f2230;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
 }
 
-#root {
-  height: 100vh;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #1f2230;
+  color: #fff;
+  overflow: hidden;
 }
 
 .app {
-  display: grid;
-
-  grid-template-columns: 350px 1fr 320px;
-
+  width: 100%;
   height: 100vh;
 
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 320px 1fr 300px;
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media (max-width: 1100px) {
+  .app {
+    grid-template-columns: 280px 1fr;
+  }
+
+  .app aside:last-child {
+    display: none;
+  }
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
 }
